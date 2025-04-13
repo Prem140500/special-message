@@ -1,75 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Message</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            text-align: center;
-            padding: 20px;
-            margin: 0;
-        }
-        h1 {
-            color: #3b5998;
-            font-size: 2em;
-        }
-        .content {
-            margin-top: 20px;
-            font-size: 1.2em;
-            display: none;
-            padding: 15px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-        }
-        button {
-            background-color: #ff6347;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.1em;
-            margin: 10px;
-        }
-        button:hover {
-            background-color: #ff4500;
-        }
-        .hidden {
-            display: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Message for You</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f5ff;
+      text-align: center;
+      padding: 50px;
+      color: #333;
+    }
+    h1 {
+      color: #8e44ad;
+    }
+    .message-part {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      padding: 15px;
+      background-color: #eae4f2;
+      border-radius: 10px;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #732d91;
+    }
+  </style>
 </head>
 <body>
+  <h1>Message for You</h1>
+  <p>Click the buttons below to reveal the message!</p>
 
-    <h1>Message for You</h1>
-    <p>Click the buttons below to reveal the message!</p>
+  <button onclick="reveal('part1')">Reveal Part 1</button>
+  <button onclick="reveal('part2')">Reveal Part 2</button>
+  <button onclick="reveal('part3')">Reveal Part 3</button>
 
-    <button onclick="revealMessage('message1')">Reveal Part 1</button>
-    <button onclick="revealMessage('message2')">Reveal Part 2</button>
-    <button onclick="revealMessage('message3')">Reveal Part 3</button>
+  <div id="part1" class="message-part">
+    Hi Tanmayi,<br>I hope you are doing well. Please read this message with an open heart and mind...
+  </div>
+  <div id="part2" class="message-part">
+    From the very first time I saw you, I started liking you and I still do...<br>
+    Your aura, your poems, everything about you stayed in my memory.
+  </div>
+  <div id="part3" class="message-part">
+    If you’re open to it, can we get to know each other better? If not, I completely understand.<br>
+    14344 ❤️<br>11:11 ✨🤞
+  </div>
 
-    <div class="content" id="message1">
-        <p>Hi Tanmayi,</p>
-        <p>I hope you are doing well.</p>
-    </div>
-    <div class="content" id="message2">
-        <p>Please read this message with an open heart and mind. If this hurts your sentiments in any way, I sincerely apologize in advance.</p>
-        <p>I know this is way too direct, as we don't even know each other well...</p>
-    </div>
-    <div class="content" id="message3">
-        <p>I just wanted to share what was in my heart, and I genuinely wish you all the happiness in the world, no matter what path you choose.</p>
-    </div>
-
-    <script>
-        function revealMessage(id) {
-            var element = document.getElementById(id);
-            element.classList.toggle('hidden');
-        }
-    </script>
-
+  <script>
+    function reveal(id) {
+      document.getElementById(id).style.display = "block";
+    }
+  </script>
 </body>
 </html>
