@@ -3,31 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Special Message for You</title>
+    <title>Special Message for Tanmayi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            background-color: #fff;
+            margin: 20px;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 800px;
-            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
         }
-        .message-part {
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        .message-section {
+            margin-bottom: 20px;
             display: none;
-            margin-top: 20px;
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .reveal-btn {
             background-color: #4CAF50;
@@ -37,7 +32,6 @@
             border-radius: 5px;
             cursor: pointer;
             margin: 5px;
-            font-size: 16px;
         }
         .reveal-btn:hover {
             background-color: #45a049;
@@ -45,53 +39,49 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Message for You</h1>
-        <p>Click the buttons below to reveal the message!</p>
-        
-        <!-- Buttons to reveal different parts of the message -->
-        <button class="reveal-btn" onclick="revealMessage(1)">Reveal Part 1</button>
-        <button class="reveal-btn" onclick="revealMessage(2)">Reveal Part 2</button>
-        <button class="reveal-btn" onclick="revealMessage(3)">Reveal Part 3</button>
-        <button class="reveal-btn" onclick="revealMessage(4)">Reveal Part 4</button>
-        
-        <!-- The message content parts -->
-        <div id="message1" class="message-part">
-            <p>Hi Tanmayi, <br>I hope you are doing well.<br><br>Please read this message with an open heart and mind. If this hurts your sentiments in any way, I sincerely apologize in advance.</p>
-        </div>
-        <div id="message2" class="message-part">
-            <p>I know this is way too direct, as we don't even know each other well. We have just met a couple of times in the clubhouse gym, and that too back in 2021. I still remember how I started a conversation with you by appreciating the poems you used to write on Cosmopetica. They were really amazing, and I still wonder why you don't post now.</p>
-        </div>
-        <div id="message3" class="message-part">
-            <p>From the very first time I saw you, I started liking you and I still do. There was something special about you. Your aura felt full of positivity, something that's rare. Your kindness and humbleness deeply moved me.</p>
-        </div>
-        <div id="message4" class="message-part">
-            <p>Your name 'Tanmayi' truly suits you, which means “one who is deeply absorbed in”. It reflects in your poems, your presence, and the way you carry yourself.<br><br>But I was never able to confess this to you, as we didn’t know each other well and still don’t but we can. I also tried to connect with you, but when you didn’t reply to my birthday wish, it disheartened me.</p>
-        </div>
-        <div id="message5" class="message-part">
-            <p>After that, I decided to let go of these feelings and focus on my career, as I believe stability is essential in life. But despite my efforts, I could never truly move on.<br><br>I don’t know where I found the courage to write this today, but the only thing I know is if I don’t express myself now, I will regret it for the rest of my life, and that’s something I don’t want.</p>
-        </div>
-        <div id="message6" class="message-part">
-            <p>I know this message may be unexpected for you, but I really wanted to express my feelings for you. If you’re open to it, can we have a chance? I’d love to get to know you better and see where things go (only if you’re comfortable with it).</p>
-        </div>
-        <div id="message7" class="message-part">
-            <p>If not, I completely understand and respect your feelings, and I genuinely wish you all the happiness in the world no matter what path you choose.<br><br>Once again, I am really sorry if this has made you feel uncomfortable or upset, that was never my intention and never will be. I just wanted to share what was in my heart.<br><br>Thank you so much for taking out time to read this long message.</p>
-        </div>
-        <div id="message8" class="message-part">
-            <p>14344 ❤<br>11:11 ✨🤞</p>
-        </div>
-        <div id="message9" class="message-part">
-            <p>A Glimpse of You<br>I saw you once, and time stood still, <br>A quiet spark I couldn’t kill. <br>Not loud, not wild, not overdone, <br>Just soft and warm like morning sun.<br><br>Your name, 'Tanmayi' calm and deep, <br>Like gentle thoughts before I sleep. <br>A voice I heard in poems past, <br>A presence that would always last.<br><br>I don’t know where your journey flows, <br>What dreams you chase, what path you chose. <br>But if these words reach where you are, <br>Just know someone still wishes from afar.<br><br>No rush, no plans set in stone, <br>Just hope our paths cross when the time is our own.</p>
-        </div>
+
+    <h1>Message for You</h1>
+    <p>Click the buttons below to reveal the message!</p>
+
+    <button class="reveal-btn" onclick="revealMessage(1)">Reveal Part 1</button>
+    <button class="reveal-btn" onclick="revealMessage(2)">Reveal Part 2</button>
+    <button class="reveal-btn" onclick="revealMessage(3)">Reveal Part 3</button>
+
+    <div id="part1" class="message-section">
+        <p>Hi Tanmayi, <br> I hope you are doing well.</p>
+        <p>Please read this message with an open heart and mind. If this hurts your sentiments in any way, I sincerely apologize in advance.</p>
+        <p>I know this is way too direct, as we don't even know each other well. We have just met a couple of times in the clubhouse gym, and that too back in 2021. I still remember how I started a conversation with you by appreciating the poems you used to write on Cosmopetica. They were really amazing, and I still wonder why you don't post now.</p>
+        <p>From the very first time I saw you, I started liking you and I still do. There was something special about you. Your aura felt full of positivity, something that’s rare. Your kindness and humbleness deeply moved me.</p>
+    </div>
+
+    <div id="part2" class="message-section">
+        <p>Your name 'Tanmayi' truly suits you which means “one who is deeply absorbed in”. It reflects in your poems, your presence, and the way you carry yourself. </p>
+        <p>But I was never able to confess this to you, as we didn’t know each other well and still don’t but we can. I also tried to connect with you, but when you didn’t reply to the birthday wish, it disheartened me.</p>
+        <p>After that, I decided to let go of these feelings and focus on my career, as I believe stability is essential in life. But despite my efforts, I could never truly move on.</p>
+        <p>I don’t know where I found the courage to write this today, but the only thing I know is if I don’t express myself now, I will regret it for the rest of my life, and that’s something I don’t want.</p>
+        <p>I know this message may be unexpected for you, but I really wanted to express my feelings for you. If you’re open to it, can we have a chance? I’d love to get to know you better and see where things go (only if you’re comfortable with it).</p>
+    </div>
+
+    <div id="part3" class="message-section">
+        <p>If not, I completely understand and respect your feelings, and I genuinely wish you all the happiness in the world no matter what path you choose.</p>
+        <p>Once again, I am really sorry if this has made you feel uncomfortable or upset, that was never my intention and never will be. I just wanted to share what was in my heart.</p>
+        <p>Thank you so much for taking out time to read this long message.</p>
+        <p>14344 ❤</p>
+        <p>11:11 ✨🤞</p>
+
+        <h3>A Glimpse of You</h3>
+        <p>I saw you once, and time stood still, <br> A quiet spark I couldn’t kill. <br> Not loud, not wild, not overdone, <br> Just soft and warm like morning sun.</p>
+        <p>Your name, 'Tanmayi' calm and deep, <br> Like gentle thoughts before I sleep. <br> A voice I heard in poems past, <br> A presence that would always last.</p>
+        <p>I don’t know where your journey flows, <br> What dreams you chase, what path you chose. <br> But if these words reach where you are, <br> Just know someone still wishes from afar.</p>
+        <p>No rush, no plans set in stone, <br> Just hope our paths cross when the time is our own.</p>
     </div>
 
     <script>
-        // Function to reveal message content
         function revealMessage(part) {
-            var messageId = "message" + part;
-            var messageDiv = document.getElementById(messageId);
-            messageDiv.style.display = "block";  // Reveal the message part
+            const partElement = document.getElementById(`part${part}`);
+            partElement.style.display = 'block';
         }
     </script>
+
 </body>
 </html>
