@@ -41,13 +41,14 @@
             background-color: #d62828;
         }
         .heart-play-btn {
-            font-size: 30px;
+            font-size: 40px;
             padding: 20px;
             background: transparent;
             border: none;
             cursor: pointer;
             color: #e63946;
             animation: bounce 1s infinite;
+            margin-top: 30px;
         }
         .heart-play-btn:hover {
             color: #ff5e57;
@@ -87,9 +88,8 @@
         <!-- Add your message content for Part 3 here -->
     </div>
 
-    <button class="heart-play-btn" onclick="playMusic()">
-        &#10084;&#65039; Play Music &#10084;&#65039;
-    </button>
+    <!-- Heart-shaped play button -->
+    <button class="heart-play-btn" onclick="playMusic()">&#10084;&#65039; Play Music &#10084;&#65039;</button>
 
     <audio id="background-music" loop>
         <source src="https://www.example.com/your-romantic-music.mp3" type="audio/mp3">
