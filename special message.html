@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        h1 {
+            color: #3b5998;
+            font-size: 2em;
+        }
+        .content {
+            margin-top: 20px;
+            font-size: 1.2em;
+            display: none;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #ff6347;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #ff4500;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Message for You</h1>
+    <p>Click the buttons below to reveal the message!</p>
+
+    <button onclick="revealMessage('message1')">Reveal Part 1</button>
+    <button onclick="revealMessage('message2')">Reveal Part 2</button>
+    <button onclick="revealMessage('message3')">Reveal Part 3</button>
+
+    <div class="content" id="message1">
+        <p>Hi Tanmayi,</p>
+        <p>I hope you are doing well.</p>
+    </div>
+    <div class="content" id="message2">
+        <p>Please read this message with an open heart and mind. If this hurts your sentiments in any way, I sincerely apologize in advance.</p>
+        <p>I know this is way too direct, as we don't even know each other well...</p>
+    </div>
+    <div class="content" id="message3">
+        <p>I just wanted to share what was in my heart, and I genuinely wish you all the happiness in the world, no matter what path you choose.</p>
+    </div>
+
+    <script>
+        function revealMessage(id) {
+            var element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>
