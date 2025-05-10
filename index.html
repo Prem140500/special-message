@@ -1,206 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>From My Heart to Yours</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
-      color: #4e0030;
-      overflow-x: hidden;
-      position: relative;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 2.5em;
-      color: #b30059;
-      text-shadow: 1px 1px 4px #fff;
-    }
-
-    p.intro {
-      text-align: center;
-      margin: 20px;
-      font-size: 1.1em;
-    }
-
-    .button-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 30px;
-    }
-
-    button {
-      background-color: #ff4da6;
-      color: white;
-      border: none;
-      padding: 15px 25px;
-      font-size: 1em;
-      cursor: pointer;
-      border-radius: 30px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #ff3399;
-      transform: scale(1.05);
-    }
-
-    .message {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-      font-size: 1.1em;
-      line-height: 1.6;
-      display: none;
-      opacity: 0;
-      transition: opacity 1s ease;
-      white-space: pre-wrap;
-    }
-
-    .message.show {
-      display: block;
-      opacity: 1;
-    }
-
-    /* Floating hearts */
-    .heart {
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: #ff6699;
-      transform: rotate(45deg);
-      animation: floatHearts 10s linear infinite;
-      opacity: 0.6;
-    }
-
-    .heart::before,
-    .heart::after {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      background-color: #ff6699;
-      border-radius: 50%;
-    }
-
-    .heart::before {
-      top: -10px;
-      left: 0;
-    }
-
-    .heart::after {
-      left: -10px;
-      top: 0;
-    }
-
-    @keyframes floatHearts {
-      0% {
-        transform: translateY(100vh) rotate(45deg);
-        opacity: 0;
-      }
-      50% {
-        opacity: 0.8;
-      }
-      100% {
-        transform: translateY(-10vh) rotate(45deg);
-        opacity: 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Confession Message</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f3f3f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .message-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .floating-hearts {
+            position: absolute;
+            animation: floatHearts 6s ease-in-out infinite;
+        }
+        @keyframes floatHearts {
+            0% {
+                transform: translateY(0) scale(0.8);
+            }
+            50% {
+                transform: translateY(-20px) scale(1.2);
+            }
+            100% {
+                transform: translateY(0) scale(0.8);
+            }
+        }
+        .heart {
+            font-size: 2rem;
+            color: #FF69B4;
+            position: absolute;
+            top: -10px;
+            animation: heartAnimation 2s ease-in-out infinite;
+        }
+        @keyframes heartAnimation {
+            0% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>From My Heart to Yours, Tanmayi ❤️</h1>
-  <p class="intro">Click the buttons below to reveal the message.</p>
-
-  <div class="button-container">
-    <button onclick="reveal('part1')">Reveal Part 1</button>
-    <button onclick="reveal('part2')">Reveal Part 2</button>
-    <button onclick="reveal('part3')">Reveal Part 3</button>
-  </div>
-
-  <div id="part1" class="message">
-Hi Tanmayi, 
-I hope you are doing well.
-
-Please read this message with an open heart and mind.
-If this hurts your sentiments in any way, I sincerely apologize in advance.
-
-I know this is way too direct, as we don't even know each other well. We have just met a couple of times in the clubhouse gym, and that too back in 2021. I still remember how I started a conversation with you by appreciating the poems you used to write on Cosmopetica. They were really amazing, and I still wonder why you don't post now.
-
-From the very first time I saw you, I started liking you and I still do. There was something special about you. Your aura felt full of positivity, something that’s rare. Your kindness and humbleness deeply moved me.
-
-Your name 'Tanmayi' truly suits you which means “one who is deeply absorbed in”. It reflects in your poems, your presence, and the way you carry yourself. 
-  </div>
-
-  <div id="part2" class="message">
-But I was never able to confess this to you, as we didn’t know each other well and still don’t but we can. I also tried to connect with you, but when you didn’t reply to the birthday wish, it disheartened me.
-
-After that, I decided to let go of these feelings and focus on my career, as I believe stability is essential in life. But despite my efforts, I could never truly move on.
-
-I don’t know where I found the courage to write this today, but the only thing I know is if I don’t express myself now, I will regret it for the rest of my life, and that’s something I don’t want.
-
-I know this message may be unexpected for you, but I really wanted to express my feelings for you. 
-If you’re open to it, can we have a chance? I’d love to get to know you better and see where things go (only if you’re comfortable with it).
-
-If not, I completely understand and respect your feelings, and I genuinely wish you all the happiness in the world no matter what path you choose.
-
-Once again, I am really sorry if this has made you feel uncomfortable or upset, that was never my intention and never will be. I just wanted to share what was in my heart. 
-
-Thank you so much for taking out time to read this long message.
-
-14344 ❤
-11:11 ✨🤞 
-  </div>
-
-  <div id="part3" class="message">
-A Glimpse of You
-
-I saw you once, and time stood still,
-A quiet spark I couldn’t kill.
-Not loud, not wild, not overdone,
-Just soft and warm like morning sun. 
-
-Your name, 'Tanmayi' calm and deep, 
-Like gentle thoughts before I sleep.
-A voice I heard in poems past,
-A presence that would always last.
-
-I don’t know where your journey flows,
-What dreams you chase, what path you chose.
-But if these words reach where you are,
-Just know someone still wishes from afar.
-
-No rush, no plans set in stone,
-Just hope our paths cross when the time is our own.
-  </div>
-
-  <script>
-    function reveal(id) {
-      const el = document.getElementById(id);
-      el.classList.add("show");
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-
-    // Floating hearts creation
-    setInterval(() => {
-      const heart = document.createElement('div');
-      heart.classList.add('heart');
-      heart.style.left = `${Math.random() * 100}vw`;
-      heart.style.animationDuration = `${6 + Math.random() * 4}s`;
-      document.body.appendChild(heart);
-      setTimeout(() => heart.remove(), 10000);
-    }, 300);
-  </script>
+    <div class="message-container">
+        <h2>Hi Tanmayi,</h2>
+        <p>I hope you are doing well.</p>
+        <p>Please read this message with an open heart and mind. If this message hurts your sentiments in any way, I sincerely apologize in advance.</p>
+        <p>I know this may be unexpected for you, as we don't even know each other well...</p> 
+        <p>....(full message continues here)...</p>
+        <div class="floating-hearts">
+            <span class="heart">💖</span>
+            <span class="heart" style="animation-delay: 2s;">💖</span>
+            <span class="heart" style="animation-delay: 4s;">💖</span>
+        </div>
+    </div>
 </body>
 </html>
